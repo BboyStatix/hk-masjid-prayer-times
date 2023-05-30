@@ -1,0 +1,697 @@
+{
+  "items": [
+    {
+      "id": "VKpDZoKP",
+      "name": "Al Suffah Welfare Madrasa",
+      "address": "30 Fung Shue Wo ",
+      "city": "Tsing Yi",
+      "state": "New Territories",
+      "country": "HK",
+      "longitude": "114.1008",
+      "latitude": "22.3560",
+      "zipcode": "-",
+      "phone": "+85224355759",
+      "meta": "-",
+      "email": "alsuffah.madrassa@gmail.com",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "7.23",
+      "logo": "https://masjidal.com/api/../uploads/2736/1681800527_logo.jpg",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "7, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:13 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "3:39 PM",
+            "maghrib": "7:02 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:30 PM",
+            "asr": "5:20 PM",
+            "maghrib": "7:12 PM",
+            "isha": "8:30 PM",
+            "jummah1": "1:15 PM",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8KXmRELM",
+      "name": "MASJID E ABDULLAH",
+      "address": "Kam Sha Mansion, Room 214, 2/F,214 Cheung Sha Wan Rd",
+      "city": "Sham Sui Po",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1622",
+      "latitude": "22.3310",
+      "zipcode": "000000",
+      "phone": " 63661477",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "11.03",
+      "logo": "https://masjidal.com/api/../uploads/2916/1683985210_logo.png",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:13 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "3:39 PM",
+            "maghrib": "7:02 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:30 PM",
+            "asr": "4:30 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:40 PM",
+            "jummah1": "1:20 PM",
+            "jummah2": "1:20 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "JdGJ47AP",
+      "name": "CityU Quiet Room",
+      "address": "4/F,  RM4205,  Bank of China (Hong Kong) Complex",
+      "city": "Kowloon City",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1717",
+      "latitude": "22.3373",
+      "zipcode": "852",
+      "phone": "-",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": true,
+      "premium_features": {
+        "app": true,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "11.16",
+      "logo": "https://masjidal.com/api/../uploads/2524/1679805236_logo.png",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "8, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:13 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "3:39 PM",
+            "maghrib": "7:02 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:10 AM",
+            "zuhr": "1:15 PM",
+            "asr": "5:10 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:40 PM",
+            "jummah1": "-",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xdyqW4dX",
+      "name": "Hazrat Siddique Akbar Society (HKSAR)",
+      "address": "101 Apliu St",
+      "city": "Sham Sui Po",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1642",
+      "latitude": "22.3283",
+      "zipcode": "-",
+      "phone": "-",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": true
+      },
+      "is_shell_account": false,
+      "distance": "11.25",
+      "logo": "",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:12 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "4:59 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:10 AM",
+            "zuhr": "1:30 PM",
+            "asr": "5:15 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:50 PM",
+            "jummah1": "1:00 PM",
+            "jummah2": "1:30 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RKxwmldO",
+      "name": "Masjid Ibrahim Mong Kok",
+      "address": "300 Ferry St",
+      "city": "Mong Kok",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1670",
+      "latitude": "22.3120",
+      "zipcode": "-",
+      "phone": "94857167",
+      "meta": "masjid,ibrahim,Ibrahim",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "12.20",
+      "logo": "https://masjidal.com/api/../uploads/2944/1684201607_logo.jpeg",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:15 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:21 PM",
+            "asr": "4:58 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:20 PM",
+            "asr": "5:30 PM",
+            "maghrib": "7:07 PM",
+            "isha": "8:40 PM",
+            "jummah1": "1:00 PM",
+            "jummah2": "2:00 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "YAD4PxAN",
+      "name": "Islamic Services Association (HK)",
+      "address": "47 Yuk Wah Cres",
+      "city": "Tsz Wan Shan",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.2017",
+      "latitude": "22.3469",
+      "zipcode": "-",
+      "phone": "+85284810108",
+      "meta": "Tsz Wan Shan Madrasa",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "12.27",
+      "logo": "",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "8, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:12 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "3:37 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:26 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:15 PM",
+            "asr": "5:20 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:40 PM",
+            "jummah1": "1:20 PM",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pVdwkode",
+      "name": "TADREES-UL-QURAN",
+      "address": "210號 Kowloon City Rd",
+      "city": "To Kwa Wan",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1910",
+      "latitude": "22.3224",
+      "zipcode": "-",
+      "phone": "97060064",
+      "meta": "Madrasa,tadrees,madrasa,ulquran,hong kong",
+      "email": "utadrees@gmail.com",
+      "website_url": "https://madrasa-tadrees-ul-quran.cf/",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "https://masjidal.com/widget/monthly/v2?masjid_id=pVdwkode",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "12.77",
+      "logo": "https://masjidal.com/api/../uploads/1104/1678182269_logo.png",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:15 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:25 PM",
+            "asr": "4:56 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:30 PM",
+            "asr": "5:30 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:45 PM",
+            "jummah1": "1:00 PM",
+            "jummah2": "1:30 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xwLVrxLJ",
+      "name": "Kowloon Mosque and Islamic Centre",
+      "address": "105 Nathan Rd",
+      "city": "Hong kong",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.1717",
+      "latitude": "22.2987",
+      "zipcode": "-",
+      "phone": "27240095",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": true,
+      "premium_features": {
+        "app": true,
+        "slideshow": true
+      },
+      "is_shell_account": false,
+      "distance": "13.09",
+      "logo": "https://masjidal.com/api/../uploads/1847/1667657520_logo.jpeg",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:14 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:26 PM",
+            "asr": "3:38 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:15 PM",
+            "asr": "5:10 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:40 PM",
+            "jummah1": "1:00 PM",
+            "jummah2": "1:30 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OA8nGOKp",
+      "name": "Masjid Ismaiel",
+      "address": "8 Yat Tung St, Yat Tung Estate",
+      "city": "Tung Chung",
+      "state": "New Territories",
+      "country": "HK",
+      "longitude": "113.9366",
+      "latitude": "22.2824",
+      "zipcode": "NA",
+      "phone": "-",
+      "meta": "Masjid Ismail",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "13.10",
+      "logo": "https://masjidal.com/api/../uploads/2506/1679570304_logo.jpeg",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:14 AM",
+            "sunrise": "5:40 AM",
+            "zuhr": "12:22 PM",
+            "asr": "4:58 PM",
+            "maghrib": "7:06 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:05 AM",
+            "zuhr": "1:30 PM",
+            "asr": "5:20 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:45 PM",
+            "jummah1": "1:10 PM",
+            "jummah2": "1:30 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4KBq06d5",
+      "name": "Masjid Jamia",
+      "address": "30 Shelley St",
+      "city": "Mid Levels",
+      "state": "Hong Kong Island",
+      "country": "HK",
+      "longitude": "114.1519",
+      "latitude": "22.2802",
+      "zipcode": "000",
+      "phone": "-",
+      "meta": "Shelly Mosque",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": true
+      },
+      "is_shell_account": false,
+      "distance": "13.40",
+      "logo": "",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:15 AM",
+            "sunrise": "5:40 AM",
+            "zuhr": "12:26 PM",
+            "asr": "4:58 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:26 PM"
+          },
+          "iqamah": {
+            "fajr": "5:00 AM",
+            "zuhr": "1:25 PM",
+            "asr": "5:20 PM",
+            "maghrib": "7:08 PM",
+            "isha": "8:40 PM",
+            "jummah1": "1:15 PM",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "VKpD37KP",
+      "name": "Masjid Ammar & Osman Ramju Sadick Islamic Center",
+      "address": "40 Oi Kwan Rd",
+      "city": "Wan Chai",
+      "state": "Hong Kong Island",
+      "country": "HK",
+      "longitude": "114.1788",
+      "latitude": "22.2773",
+      "zipcode": "000",
+      "phone": "25752218",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "14.53",
+      "logo": "",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:15 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:21 PM",
+            "asr": "4:57 PM",
+            "maghrib": "7:02 PM",
+            "isha": "8:21 PM"
+          },
+          "iqamah": {
+            "fajr": "5:50 AM",
+            "zuhr": "1:15 PM",
+            "asr": "5:10 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:10 PM",
+            "jummah1": "1:20 AM",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "DAgvQwL0",
+      "name": "KNICL Kwun Tong",
+      "address": "G/F 41 Tung Ming Street",
+      "city": "Kwun Tong",
+      "state": "Kowloon",
+      "country": "HK",
+      "longitude": "114.2223",
+      "latitude": "22.3169",
+      "zipcode": "00000",
+      "phone": "97121015",
+      "meta": "Kwun,Tong",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": false
+      },
+      "is_shell_account": false,
+      "distance": "14.55",
+      "logo": "https://masjidal.com/api/../uploads/2951/1684376687_logo.jpeg",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:15 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:24 PM",
+            "asr": "4:56 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:10 AM",
+            "zuhr": "1:15 PM",
+            "asr": "5:05 PM",
+            "maghrib": "7:07 PM",
+            "isha": "8:30 PM",
+            "jummah1": "1:00 PM",
+            "jummah2": "2:00 PM",
+            "jummah3": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zKz8XXAO",
+      "name": "Chai Wan Masjid",
+      "address": "Cape Collinson Road",
+      "city": "Chai Wan",
+      "state": "Hong Kong Island",
+      "country": "HK",
+      "longitude": "114.2333",
+      "latitude": "22.2593",
+      "zipcode": "000",
+      "phone": "-",
+      "meta": "-",
+      "email": "-",
+      "website_url": "-",
+      "event_url": "-",
+      "donation_url": "-",
+      "audio_url": "-",
+      "prayer_timing_url": "-",
+      "app_premium_features": false,
+      "premium_features": {
+        "app": false,
+        "slideshow": true
+      },
+      "is_shell_account": false,
+      "distance": "17.75",
+      "logo": "https://masjidal.com/api/../uploads/2386/1681423343_logo.png",
+      "times": [
+        {
+          "date": "Monday, May 29, 2023",
+          "hijri_date": "9, 1444",
+          "hijri_month": "Dhul-Qadah",
+          "salah": {
+            "fajr": "4:12 AM",
+            "sunrise": "5:39 AM",
+            "zuhr": "12:25 PM",
+            "asr": "4:58 PM",
+            "maghrib": "7:05 PM",
+            "isha": "8:27 PM"
+          },
+          "iqamah": {
+            "fajr": "5:10 AM",
+            "zuhr": "1:30 PM",
+            "asr": "5:10 PM",
+            "maghrib": "7:10 PM",
+            "isha": "8:30 PM",
+            "jummah1": "1:20 PM",
+            "jummah2": "-",
+            "jummah3": "-"
+          }
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://masjidal.com/api/v3/masjids/proximity?date_start=2023-05-29&distance=30&expand=times&lat=22.44519279770756&long=114.0417109256271&page=1"
+    },
+    "first": {
+      "href": "https://masjidal.com/api/v3/masjids/proximity?date_start=2023-05-29&distance=30&expand=times&lat=22.44519279770756&long=114.0417109256271&page=1"
+    },
+    "last": {
+      "href": "https://masjidal.com/api/v3/masjids/proximity?date_start=2023-05-29&distance=30&expand=times&lat=22.44519279770756&long=114.0417109256271&page=1"
+    }
+  },
+  "_meta": {
+    "totalCount": 13,
+    "pageCount": 1,
+    "currentPage": 1,
+    "perPage": 20
+  }
+}

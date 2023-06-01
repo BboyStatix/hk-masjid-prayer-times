@@ -11,6 +11,15 @@ const Masjids = async () => {
           <div key={masjid.id} className="border">
             <h2 className="text-2xl">{masjid.name}</h2>
 
+            {masjid.logo && (
+              <Image
+                src={masjid.logo}
+                alt={`${masjid.name} logo`}
+                width={100}
+                height={100}
+              />
+            )}
+
             <h3 className="text-xl">Salah</h3>
             <div>Fajr {masjid.times[0].salah.fajr}</div>
             <div>Sunrise {masjid.times[0].salah.sunrise}</div>

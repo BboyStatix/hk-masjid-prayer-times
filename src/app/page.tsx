@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { fetchHongKongMasjidsInformation } from "./MasjidService";
+import Link from "next/link";
 
 const Masjids = async () => {
   const masjids = await fetchHongKongMasjidsInformation();
@@ -9,7 +10,11 @@ const Masjids = async () => {
       <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
       <div className="grid grid-cols-4 gap-4">
         {masjids.map((masjid) => (
-          <div key={masjid.id} className="border p-4 text-center">
+          <Link
+            key={masjid.id}
+            className="border p-4 text-center hover:bg-gray-300"
+            href={`/masjids/${masjid.name}`}
+          >
             <h2 className="text-2xl">{masjid.name}</h2>
 
             {masjid.logo && (
@@ -31,7 +36,7 @@ const Masjids = async () => {
             <div>Isha {masjid.times[0].iqamah.isha}</div>
 
             <br />
-          </div>
+          </Link>
         ))}
       </div>
     </div>

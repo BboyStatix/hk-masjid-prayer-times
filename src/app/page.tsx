@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { fetchHongKongMasjidsInformation } from "./MasjidService";
 
 const Masjids = async () => {
@@ -5,19 +6,21 @@ const Masjids = async () => {
 
   return (
     <div>
-      <h1 className="text-3xl">Hong Kong Masjid Prayer times</h1>
+      <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
       <div className="grid grid-cols-4 gap-4">
         {masjids.map((masjid) => (
-          <div key={masjid.id} className="border">
+          <div key={masjid.id} className="border p-4 text-center">
             <h2 className="text-2xl">{masjid.name}</h2>
 
             {masjid.logo && (
-              <Image
-                src={masjid.logo}
-                alt={`${masjid.name} logo`}
-                width={100}
-                height={100}
-              />
+              <div className="flex justify-center mb-2">
+                <Image
+                  src={masjid.logo}
+                  alt={`${masjid.name} logo`}
+                  width={100}
+                  height={100}
+                />
+              </div>
             )}
 
             <h3 className="text-xl">Iqamah</h3>

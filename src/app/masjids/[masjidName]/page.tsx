@@ -47,7 +47,7 @@ const Masjid = async ({ params }: { params: { masjidName: string } }) => {
 
   if (!masjid) return "Masjid not found!";
 
-  return <div>{masjid.name}</div>;
+  return <h2 className="text-2xl">{masjid.name}</h2>;
 };
 
 export default Masjid;

@@ -5,7 +5,7 @@ const Masjids = async () => {
 
   return (
     <div>
-      <h1 className="text-3xl">HK Masjid Prayer times</h1>
+      <h1 className="text-3xl">Hong Kong Masjid Prayer times</h1>
       {masjids.map((masjid) => (
         <div key={masjid.id}>
           <h2 className="text-2xl">{masjid.name}</h2>

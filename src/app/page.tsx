@@ -20,14 +20,6 @@ const Masjids = async () => {
               />
             )}
 
-            <h3 className="text-xl">Salah</h3>
-            <div>Fajr {masjid.times[0].salah.fajr}</div>
-            <div>Sunrise {masjid.times[0].salah.sunrise}</div>
-            <div>Zuhr {masjid.times[0].salah.zuhr}</div>
-            <div>Asr {masjid.times[0].salah.asr}</div>
-            <div>Maghrib {masjid.times[0].salah.maghrib}</div>
-            <div>Isha {masjid.times[0].salah.isha}</div>
-
             <h3 className="text-xl">Iqamah</h3>
             <div>Fajr {masjid.times[0].iqamah.fajr}</div>
             <div>Zuhr {masjid.times[0].iqamah.zuhr}</div>

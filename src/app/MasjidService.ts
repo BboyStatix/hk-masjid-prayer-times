@@ -22,7 +22,7 @@ interface PrayerTime {
   };
 }
 
-interface MasjidInformation {
+export interface MasjidInformation {
   id: string;
   name: string;
   address: string;

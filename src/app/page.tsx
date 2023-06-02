@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { fetchHongKongMasjidsInformation } from "./MasjidService";
 import Link from "next/link";
+import IqamahTimes from "./components/IqamahTimes";
 
 const Masjids = async () => {
   const masjids = await fetchHongKongMasjidsInformation();
@@ -28,13 +29,7 @@ const Masjids = async () => {
               </div>
             )}
 
-            <h3 className="text-xl">Iqamah</h3>
-            <div>Fajr {masjid.times[0].iqamah.fajr}</div>
-            <div>Zuhr {masjid.times[0].iqamah.zuhr}</div>
-            <div>Asr {masjid.times[0].iqamah.asr}</div>
-            <div>Maghrib {masjid.times[0].iqamah.maghrib}</div>
-            <div>Isha {masjid.times[0].iqamah.isha}</div>
-
+            <IqamahTimes prayerTime={masjid.times[0]} />
             <br />
           </Link>
         ))}

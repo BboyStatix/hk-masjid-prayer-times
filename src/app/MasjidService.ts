@@ -1,4 +1,4 @@
-interface PrayerTime {
+export interface PrayerTime {
   date: string;
   hijri_date: string;
   hijri_month: string;

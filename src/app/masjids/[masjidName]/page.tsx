@@ -2,7 +2,9 @@ import {
   MasjidInformation,
   fetchHongKongMasjidsInformation,
 } from "@/app/MasjidService";
+import IqamahTimes from "@/app/components/IqamahTimes";
 import { Metadata } from "next";
+import Image from "next/image";
 
 const createMasjidIqamahTimesDescription = (masjid?: MasjidInformation) => {
   return masjid
@@ -47,7 +49,24 @@ const Masjid = async ({ params }: { params: { masjidName: string } }) => {
 
   if (!masjid) return "Masjid not found!";
 
-  return <h2 className="text-2xl">{masjid.name}</h2>;
+  return (
+    <div>
+      <h2 className="text-2xl">{masjid.name}</h2>
+
+      {masjid.logo && (
+        <div className="mb-2">
+          <Image
+            src={masjid.logo}
+            alt={`${masjid.name} logo`}
+            width={100}
+            height={100}
+          />
+        </div>
+      )}
+
+      <IqamahTimes prayerTime={masjid.times[0]} />
+    </div>
+  );
 };
 
 export default Masjid;

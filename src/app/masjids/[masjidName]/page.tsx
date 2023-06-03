@@ -2,6 +2,7 @@ import {
   MasjidInformation,
   fetchHongKongMasjidsInformation,
 } from "@/app/MasjidService";
+import PoweredByMasjidal from "@/app/components/PoweredByMasjidal";
 import { Metadata } from "next";
 
 const createMasjidIqamahTimesDescription = (masjid?: MasjidInformation) => {
@@ -48,12 +49,18 @@ const Masjid = async ({ params }: { params: { masjidName: string } }) => {
   if (!masjid) return "Masjid not found!";
 
   return (
-    <div>
-      <h2 className="text-xl mb-2">{masjid.name}</h2>
-      <iframe
-        src={`https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=${masjid.id}`}
-        height="560"
-      />
+    <div className="flex justify-center">
+      <div>
+        <h2 className="text-xl mb-2 text-center font-bold">{masjid.name}</h2>
+        <div className="flex justify-center">
+          <iframe
+            className="text-center"
+            src={`https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=${masjid.id}`}
+            height="560"
+          />
+        </div>
+        <PoweredByMasjidal />
+      </div>
     </div>
   );
 };

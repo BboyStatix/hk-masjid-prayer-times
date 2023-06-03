@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const PoweredByMasjidal = () => (
-  <div className="flex justify-center">
+  <div className="flex justify-center my-4">
     <a href="https://app.masjidal.com" target="_blank">
       Powered by
       <div className="flex justify-center">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { fetchHongKongMasjidsInformation } from "./MasjidService";
 import Link from "next/link";
 import IqamahTimes from "./components/IqamahTimes";
+import PoweredByMasjidal from "./components/PoweredByMasjidal";
 
 const Masjids = async () => {
   const masjids = await fetchHongKongMasjidsInformation();
@@ -34,6 +35,7 @@ const Masjids = async () => {
           </Link>
         ))}
       </div>
+      <PoweredByMasjidal />
     </div>
   );
 };

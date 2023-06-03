@@ -17,7 +17,7 @@ const Masjids = async () => {
             className="border p-4 text-center hover:bg-gray-300"
             href={`/masjids/${masjid.name}`}
           >
-            <h2 className="text-2xl">{masjid.name}</h2>
+            <h2 className="text-2xl font-bold">{masjid.name}</h2>
 
             {masjid.logo && (
               <div className="flex justify-center mb-2">

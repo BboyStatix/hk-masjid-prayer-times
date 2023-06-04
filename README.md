@@ -7,8 +7,6 @@ In WhatsApp groups it's very common for people to enquire about the jamaat/iqama
 Instead, all this information can be put on a website with good SEO that makes it simple to Google search for and link to.
 Furthermore, by utilising [OpenGraph](https://ogp.me) meta tags, one can get a quick preview of the iqamah times by just pasting the link e.g. on WhatsApp, Facebook, Discord, etc.
 
-Here's how it would look like when pasted on different social media https://www.opengraph.xyz/url/https%3A%2F%2Fhk-masjid-prayer-times.vercel.app%2Fmasjids%2FCityU%2520Quiet%2520Room
-
 ## Getting Started
 
 First, run the development server:

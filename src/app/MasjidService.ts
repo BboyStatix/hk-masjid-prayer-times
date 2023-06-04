@@ -74,7 +74,7 @@ export async function fetchHongKongMasjidsInformation(): Promise<
   MasjidInformation[]
 > {
   const dateToday = getTodayDate();
-  const url = new URL("http://masjidal.com/api/v3/masjids/proximity");
+  const url = new URL("https://masjidal.com/api/v3/masjids/proximity");
   const params = new URLSearchParams();
   params.set("date_start", dateToday);
   params.set("distance", DEFAULT_DISTANCE);

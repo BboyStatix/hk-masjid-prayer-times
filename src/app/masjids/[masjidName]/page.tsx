@@ -36,6 +36,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       description: masjidIqamahTimesDescription,
+      images: masjid?.logo,
     },
   };
 }

@@ -2,6 +2,7 @@ import {
   MasjidInformation,
   fetchHongKongMasjidsInformation,
 } from "@/app/MasjidService";
+import MasjidLogo from "@/app/components/MasjidLogo";
 import PoweredByMasjidal from "@/app/components/PoweredByMasjidal";
 import { Metadata } from "next";
 
@@ -53,6 +54,9 @@ const Masjid = async ({ params }: { params: { masjidName: string } }) => {
     <div className="flex justify-center">
       <div>
         <h2 className="text-xl mb-2 text-center font-bold">{masjid.name}</h2>
+        <div className="flex justify-center mt-2 mb-4">
+          <MasjidLogo name={masjid.name} url={masjid.logo} />
+        </div>
         <div className="flex justify-center">
           <iframe
             className="text-center"

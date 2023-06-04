@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { fetchHongKongMasjidsInformation } from "./MasjidService";
 import Link from "next/link";
 import IqamahTimes from "./components/IqamahTimes";
 import PoweredByMasjidal from "./components/PoweredByMasjidal";
+import MasjidLogo from "./components/MasjidLogo";
 
 const Masjids = async () => {
   const masjids = await fetchHongKongMasjidsInformation();
@@ -21,12 +21,7 @@ const Masjids = async () => {
 
             {masjid.logo && (
               <div className="flex justify-center mb-2">
-                <Image
-                  src={masjid.logo}
-                  alt={`${masjid.name} logo`}
-                  width={100}
-                  height={100}
-                />
+                <MasjidLogo name={masjid.name} url={masjid.logo} />
               </div>
             )}
 

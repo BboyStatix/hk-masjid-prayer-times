@@ -10,7 +10,7 @@ const Masjids = async () => {
   return (
     <div>
       <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {masjids.map((masjid) => (
           <Link
             key={masjid.id}

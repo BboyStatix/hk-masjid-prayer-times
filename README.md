@@ -1,9 +1,13 @@
+![HK Masjid Prayer Times Demo video](hk-masjid-prayer-times.gif)
+
 Web app that displays jamaat times across mosques/madrassas across Hong Kong making use of [MasjidAl](https://mymasjidal.com/)'s API.
 
 In WhatsApp groups it's very common for people to enquire about the jamaat/iqamah times of a specific mosque. Instead of having to answer the same question again and again it should be possible for people to find out this information themselves. Although there're already apps for that, it introduces a lot of friction to something that should be as simple as a Google search.
 
 Instead, all this information can be put on a website with good SEO that makes it simple to Google search for and link to.
-Furthermore, by utilising [OpenGraph](https://ogp.me) meta tags, one can get a quick preview of the information they need by just pasting the link e.g. on WhatsApp, Facebook, Discord, etc.
+Furthermore, by utilising [OpenGraph](https://ogp.me) meta tags, one can get a quick preview of the iqamah times by just pasting the link e.g. on WhatsApp, Facebook, Discord, etc.
+
+Here's how it would look like when pasted on different social media https://www.opengraph.xyz/url/https%3A%2F%2Fhk-masjid-prayer-times.vercel.app%2Fmasjids%2FCityU%2520Quiet%2520Room
 
 ## Getting Started
 

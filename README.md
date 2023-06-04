@@ -1,4 +1,9 @@
-It's a common phenomenon for people to enquire about the jamaat times of specific mosques in WhatsApp groups. Although there's already the [Athan+ app](https://mymasjidal.com/pages/athanplus) by [MasjidAl](https://mymasjidal.com/) for that, it's not very intuitive to ask every person who asks to download it. It would be much more convenient if one could directly paste a link which pops up a preview of the mosque's iqamah times.
+Web app that displays jamaat times across mosques/madrassas across Hong Kong making use of [MasjidAl](https://mymasjidal.com/)'s API.
+
+In WhatsApp groups it's very common for people to enquire about the jamaat/iqamah times of a specific mosque. Instead of having to answer the same question again and again it should be possible for people to find out this information themselves. Although there're already apps for that, it introduces a lot of friction to something that should be as simple as a Google search.
+
+Instead, all this information can be put on a website with good SEO that makes it simple to Google search for and link to.
+Furthermore, by utilising [OpenGraph](https://ogp.me) meta tags, one can get a quick preview of the information they need by just pasting the link e.g. on WhatsApp, Facebook, Discord, etc.
 
 ## Getting Started
 

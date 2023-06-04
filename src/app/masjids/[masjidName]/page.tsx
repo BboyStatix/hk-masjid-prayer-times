@@ -35,7 +35,7 @@ export async function generateMetadata({
     createMasjidIqamahTimesDescription(masjid);
 
   return {
-    title: masjid?.name,
+    title: `${masjid?.name} Prayer/Iqamah/Jamaat Times`,
     description: masjidIqamahTimesDescription,
     openGraph: {
       type: "website",

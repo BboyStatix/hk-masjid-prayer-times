@@ -28,6 +28,9 @@ export async function generateMetadata({
   const masjid = masjids.find(
     (masjid) => masjid.name === decodeURIComponent(params.masjidName)
   );
+
+  if (!masjid) return {};
+
   const masjidIqamahTimesDescription =
     createMasjidIqamahTimesDescription(masjid);
 

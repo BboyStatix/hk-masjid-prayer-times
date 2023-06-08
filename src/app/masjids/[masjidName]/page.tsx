@@ -5,6 +5,7 @@ import {
 import MasjidLogo from "@/app/components/MasjidLogo";
 import PoweredByMasjidal from "@/app/components/PoweredByMasjidal";
 import { Metadata } from "next";
+import Link from "next/link";
 
 const createMasjidIqamahTimesDescription = (masjid?: MasjidInformation) => {
   return masjid
@@ -56,6 +57,9 @@ const Masjid = async ({ params }: { params: { masjidName: string } }) => {
   return (
     <div className="flex justify-center">
       <div>
+        <Link href="/masjids">
+          <div className="mb-4">{"<"}</div>
+        </Link>
         <h2 className="text-xl mb-2 text-center font-bold">{masjid.name}</h2>
         {masjid.logo && (
           <div className="flex justify-center mt-2 mb-4">

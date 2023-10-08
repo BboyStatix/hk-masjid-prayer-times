@@ -4,6 +4,7 @@ import IqamahTimes from "../components/IqamahTimes";
 import PoweredByMasjidal from "../components/PoweredByMasjidal";
 import MasjidLogo from "../components/MasjidLogo";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -22,7 +23,10 @@ const Masjids = async () => {
 
   return (
     <div>
-      <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
+      <div className="text-center">
+        <Image className="inline-block" src="/favicon.ico" alt="Hong Kong Masjid Prayer Times icon" width={50} height={50} />
+        <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {masjids.map((masjid) => (
           <Link

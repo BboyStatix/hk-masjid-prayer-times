@@ -8,11 +8,11 @@ import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Hong Kong Masjid Jamaat/Iqamah Times",
-    description: "Iqamah times across masjids/madrassas in Hong Kong",
+    title: "Hong Kong Masjid Prayer Times",
+    description: "Prayer times across masjids/madrassas in Hong Kong",
     openGraph: {
       type: "website",
-      title: "Hong Kong Masjid Jamaat/Iqamah Times",
+      title: "Hong Kong Masjid Prayer Times",
       images: "favicon.ico",
     },
   };

@@ -83,7 +83,11 @@ export async function fetchHongKongMasjidsInformation(): Promise<
   params.set("long", HONG_KONG_COORDINATES.longitude);
   url.search = params.toString();
 
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    next: {
+      revalidate: 3600,
+    },
+  });
   if (!res.ok) {
     throw new Error("Error occurred when fetching masjids");
   }

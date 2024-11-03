@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["masjidal.com"],
+    domains: ['uploads.prod.portal.masjidal.com'],
   },
 };
 

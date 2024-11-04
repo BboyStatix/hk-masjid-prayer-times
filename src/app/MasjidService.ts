@@ -61,6 +61,7 @@ const HONG_KONG_COORDINATES = {
 };
 
 const DEFAULT_DISTANCE = "30";
+const DEFAULT_PERPAGE = "30";
 
 const getTodayDate = () => {
   const date = new Date();
@@ -81,6 +82,8 @@ export async function fetchHongKongMasjidsInformation(): Promise<
   params.set("expand", "times");
   params.set("lat", HONG_KONG_COORDINATES.latitude);
   params.set("long", HONG_KONG_COORDINATES.longitude);
+  params.set("per-page", DEFAULT_PERPAGE);
+
   url.search = params.toString();
 
   const res = await fetch(url, {

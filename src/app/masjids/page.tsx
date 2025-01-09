@@ -5,6 +5,7 @@ import PoweredByMasjidal from "../components/PoweredByMasjidal";
 import MasjidLogo from "../components/MasjidLogo";
 import { Metadata } from "next";
 import Image from "next/image";
+import SearchBar from "../components/SearchBar"
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -18,17 +19,28 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const Masjids = async () => {
+const Masjids = async ({
+  searchParams,
+}: {
+  searchParams?: {
+    query?: string;
+  };
+}) => {
+  const query = searchParams ? (await searchParams).query || '' : '';
   const masjids = await fetchHongKongMasjidsInformation();
-
   return (
     <div>
+      <div className="container mx-auto p-4">
+          <SearchBar />
+      </div>
       <div className="text-center">
         <Image className="inline-block" src="/favicon.ico" alt="Hong Kong Masjid Prayer Times icon" width={50} height={50} />
         <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {masjids.map((masjid) => (
+        {masjids
+        .filter((masjid) => !query || masjid.name.toLowerCase().includes(query.toLowerCase()))
+        .map((masjid) => (
           <Link
             key={masjid.id}
             className="border p-4 text-center hover:bg-gray-300"

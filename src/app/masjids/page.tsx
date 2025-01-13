@@ -22,9 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 const Masjids = async ({
   searchParams,
 }: {
-  searchParams?: {
-    query?: string;
-  };
+  searchParams?: Promise<{
+    query?: string
+  }>;
 }) => {
   const query = searchParams ? (await searchParams).query || '' : '';
   const masjids = await fetchHongKongMasjidsInformation();

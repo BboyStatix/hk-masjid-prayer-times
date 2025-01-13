@@ -23,11 +23,12 @@ const createMasjidIqamahTimesDescription = (masjid?: MasjidInformation) => {
 export async function generateMetadata({
   params,
 }: {
-  params: { masjidName: string };
+  params: Promise<{ masjidName: string }>;
 }): Promise<Metadata> {
   const masjids = await fetchHongKongMasjidsInformation();
+  const masjidName = (await params).masjidName;
   const masjid = masjids.find(
-    (masjid) => masjid.name === decodeURIComponent(params.masjidName)
+    (masjid) => masjid.name === decodeURIComponent(masjidName)
   );
 
   if (!masjid) return {};
@@ -46,10 +47,11 @@ export async function generateMetadata({
   };
 }
 
-const Masjid = async ({ params }: { params: { masjidName: string } }) => {
+const Masjid = async ({ params }: { params: Promise<{ masjidName: string }> }) => {
   const masjids = await fetchHongKongMasjidsInformation();
+  const masjidName = (await params).masjidName;
   const masjid = masjids.find(
-    (masjid) => masjid.name === decodeURIComponent(params.masjidName)
+    (masjid) => masjid.name === decodeURIComponent(masjidName)
   );
 
   if (!masjid) return "Masjid not found!";

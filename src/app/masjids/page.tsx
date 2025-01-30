@@ -30,12 +30,14 @@ const Masjids = async ({
   const masjids = await fetchHongKongMasjidsInformation();
   return (
     <div>
-      <div className="container mx-auto p-4">
-          <SearchBar />
-      </div>
       <div className="text-center">
         <Image className="inline-block" src="/favicon.ico" alt="Hong Kong Masjid Prayer Times icon" width={50} height={50} />
         <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
+      </div>
+      <div className="flex justify-center mt-8 mb-8"> {/* Separate top/bottom margins */}
+        <div className="w-full max-w-2xl px-4">
+          <SearchBar />
+        </div>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {masjids

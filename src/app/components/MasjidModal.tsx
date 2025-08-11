@@ -35,7 +35,8 @@ const MasjidModal = ({ masjid, isOpen, onClose }: MasjidModalProps) => {
   const copyShareLink = async () => {
     const link = generateShareLink();
     try {
-      await navigator.clipboard.writeText(link);
+      const encodedLink = encodeURI(link); //helps copy as an proper link you can paste on WhatsApp
+      await navigator.clipboard.writeText(encodedLink);
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {

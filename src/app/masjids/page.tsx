@@ -1,7 +1,7 @@
-
 import { Metadata } from "next";
 import { fetchHongKongMasjidsInformation } from "../MasjidService";
 import MasjidCards from "../components/MasjidCards"
+import MasjidLists from "../components/MasjidLists"
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -27,8 +27,19 @@ const Masjids = async ({
   const filteredMasjids = masjids.filter(masjid =>
     !query || masjid.name.toLowerCase().includes(query.toLowerCase())
   );
+  
   return (
-    <MasjidCards masjids={filteredMasjids} />
+    <div>
+      {/* Desktop View - Hidden on mobile */}
+      <div className="hidden md:block">
+        <MasjidCards masjids={filteredMasjids} />
+      </div>
+      
+      {/* Mobile View - Hidden on desktop */}
+      <div className="md:hidden">
+        <MasjidLists masjids={filteredMasjids} />
+      </div>
+    </div>
   );
 };
 

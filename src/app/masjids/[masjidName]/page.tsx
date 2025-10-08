@@ -59,8 +59,10 @@ const Masjid = async ({ params }: { params: Promise<{ masjidName: string }> }) =
   return (
     <div className="flex justify-center">
       <div>
-        <Link href="/masjids">
-          <div className="mb-4">{"<"}</div>
+        <Link href="/">
+          <div className="mb-4">
+            <span className="text-blue-600 hover:underline cursor-pointer">&lt; Back</span>
+          </div>
         </Link>
         <h2 className="text-xl mb-2 text-center font-bold">{masjid.name}</h2>
         {masjid.logo && (

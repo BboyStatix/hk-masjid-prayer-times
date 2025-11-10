@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { MasjidInformation } from "../MasjidService";
 import Link from "next/link";
@@ -6,23 +6,18 @@ import IqamahTimes from "./IqamahTimes";
 import PoweredByMasjidal from "./PoweredByMasjidal";
 import MasjidLogo from "./MasjidLogo";
 import Image from "next/image";
-import SearchBar from "./SearchBar"
+import SearchBar from "./SearchBar";
 
-
-const CardGroup = ({
-  masjids,
-}: {
-  masjids: MasjidInformation[];
-}) => {
+const CardGroup = ({ masjids }: { masjids: MasjidInformation[] }) => {
   return (
     <div>
       <div className="text-center">
-        <Image 
-          className="inline-block" 
-          src="/favicon.ico" 
-          alt="Hong Kong Masjid Prayer Times icon" 
-          width={50} 
-          height={50} 
+        <Image
+          className="inline-block"
+          src="/favicon.ico"
+          alt="Hong Kong Masjid Prayer Times icon"
+          width={50}
+          height={50}
         />
         <h1 className="text-3xl mb-2">Hong Kong Masjid Prayer times</h1>
       </div>
@@ -37,7 +32,7 @@ const CardGroup = ({
         {masjids.map((masjid) => (
           <Link
             key={masjid.id}
-            href={`/masjids/${masjid.name}`}
+            href={`/masjids/${encodeURIComponent(masjid.name)}`}
             className="border p-4 text-center hover:bg-gray-300 cursor-pointer"
           >
             <h2 className="text-2xl font-bold">{masjid.name}</h2>

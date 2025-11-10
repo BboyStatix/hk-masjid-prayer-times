@@ -1,14 +1,12 @@
 "use client"
 
-import { fetchHongKongMasjidsInformation, MasjidInformation } from "../MasjidService";
+import { MasjidInformation } from "../MasjidService";
 import Link from "next/link";
 import IqamahTimes from "./IqamahTimes";
 import PoweredByMasjidal from "./PoweredByMasjidal";
 import MasjidLogo from "./MasjidLogo";
 import Image from "next/image";
 import SearchBar from "./SearchBar"
-import MasjidModal from '../components/MasjidModal';
-import { useState, useEffect } from 'react';
 import UpcomingIqamah from "./UpcomingIqamah";
 
 const ListGroup = ({
@@ -16,8 +14,6 @@ const ListGroup = ({
 }: {
   masjids: MasjidInformation[];
 }) => {
-  const [selectedMasjid, setSelectedMasjid] = useState<MasjidInformation | null>(null);
-
   return (
     <div className="max-w-4xl mx-auto px-4">
       <div className="text-center mb-8">
@@ -40,10 +36,10 @@ const ListGroup = ({
       {/* List View Container */}
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
         {masjids.map((masjid) => (
-          <div
+          <Link
             key={masjid.id}
-            className="border-b last:border-b-0 p-4 hover:bg-gray-50 cursor-pointer transition-colors"
-            onClick={() => setSelectedMasjid(masjid)}
+            href={`/masjids/${masjid.name}`}
+            className="border-b last:border-b-0 p-4 hover:bg-gray-50 cursor-pointer transition-colors block"
           >
           <div className="flex items-center gap-3 min-h-[80px]">
             {/* Masjid Logo */}
@@ -76,17 +72,9 @@ const ListGroup = ({
               </svg>
             </div>
           </div>
-          </div>
+          </Link>
         ))}
       </div>
-
-      {selectedMasjid && (
-        <MasjidModal
-          masjid={selectedMasjid}
-          isOpen={true}
-          onClose={() => setSelectedMasjid(null)}
-        />
-      )}
 
       <PoweredByMasjidal />
     </div>

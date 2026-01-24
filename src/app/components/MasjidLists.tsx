@@ -7,38 +7,24 @@ import MasjidLogo from "./MasjidLogo";
 import Image from "next/image";
 import SearchBar from "./SearchBar";
 import UpcomingIqamah from "./UpcomingIqamah";
-import { useState, useEffect } from 'react';
 
-const ListGroup = ({
-  masjids,
-}: {
+interface MasjidListsProps {
   masjids: MasjidInformation[];
-}) => {
-  const [favorites, setFavorites] = useState<string[]>([]);
-  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  favorites: string[];
+  toggleFavorite: (masjidId: string, e: React.MouseEvent) => void;
+  isFavorite: (masjidId: string) => boolean;
+  showFavoritesOnly: boolean;
+  setShowFavoritesOnly: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-  useEffect(() => {
-    const saved = localStorage.getItem("favoriteMasjids");
-    if (saved) setFavorites(JSON.parse(saved));
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("favoriteMasjids", JSON.stringify(favorites));
-  }, [favorites]);
-
-  const toggleFavorite = (masjidId: string, e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setFavorites((prev) =>
-      prev.includes(masjidId)
-        ? prev.filter((id) => id !== masjidId)
-        : [...prev, masjidId]
-    );
-  };
-
-  const isFavorite = (masjidId: string) => favorites.includes(masjidId);
-
-  // Filter the list based on toggle
+const MasjidLists = ({
+  masjids,
+  favorites,
+  toggleFavorite,
+  isFavorite,
+  showFavoritesOnly,
+  setShowFavoritesOnly,
+}: MasjidListsProps) => {
   const displayedMasjids = showFavoritesOnly
     ? masjids.filter((masjid) => isFavorite(masjid.id))
     : masjids;
@@ -64,7 +50,7 @@ const ListGroup = ({
         </div>
       </div>
 
-      {/* Favorites Toggle - Very light lime-green when active */}
+      {/* Favorites Toggle */}
       <div className="flex justify-center mb-8">
         <button
           type="button"
@@ -98,7 +84,6 @@ const ListGroup = ({
               className="border-b last:border-b-0 p-4 hover:bg-gray-50 cursor-pointer transition-colors block"
             >
               <div className="flex items-center justify-between gap-4">
-                {/* LEFT: Logo + Name */}
                 <div className="flex items-center gap-3 flex-1 min-w-0">
                   {masjid.logo && (
                     <div className="flex-shrink-0 w-12 h-12">
@@ -113,7 +98,6 @@ const ListGroup = ({
                   </div>
                 </div>
 
-                {/* RIGHT: Heart + Arrow */}
                 <div className="flex items-center gap-4 flex-shrink-0">
                   <button
                     onClick={(e) => {
@@ -124,11 +108,7 @@ const ListGroup = ({
                     className="flex-shrink-0"
                   >
                     {isFavorite(masjid.id) ? (
-                      <svg
-                        className="w-7 h-7 text-red-500"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg className="w-7 h-7 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                       </svg>
                     ) : (
@@ -172,4 +152,4 @@ const ListGroup = ({
   );
 };
 
-export default ListGroup;
+export default MasjidLists;

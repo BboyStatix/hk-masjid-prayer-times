@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 
 // Declare gtag function for TypeScript

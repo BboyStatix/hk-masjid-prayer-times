@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { fetchHongKongMasjidsInformation } from "../MasjidService";
-import MasjidCards from "../components/MasjidCards"
-import MasjidLists from "../components/MasjidLists"
+import MasjidViewWrapper from "../components/MasjidViewWrapper";  // ← this line must match
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -15,32 +14,18 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const Masjids = async ({
+export default async function Masjids({
   searchParams,
 }: {
   searchParams?: Promise<{
-    query?: string
+    query?: string;
   }>;
-}) => {
-  const query = searchParams ? (await searchParams).query || '' : '';
+}) {
+  const query = searchParams ? (await searchParams).query || "" : "";
   const masjids = await fetchHongKongMasjidsInformation();
-  const filteredMasjids = masjids.filter(masjid =>
+  const filteredMasjids = masjids.filter((masjid) =>
     !query || masjid.name.toLowerCase().includes(query.toLowerCase())
   );
-  
-  return (
-    <div>
-      {/* Desktop View - Hidden on mobile */}
-      <div className="hidden md:block">
-        <MasjidCards masjids={filteredMasjids} />
-      </div>
-      
-      {/* Mobile View - Hidden on desktop */}
-      <div className="md:hidden">
-        <MasjidLists masjids={filteredMasjids} />
-      </div>
-    </div>
-  );
-};
 
-export default Masjids;
+  return <MasjidViewWrapper masjids={filteredMasjids} />;
+}

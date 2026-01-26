@@ -9,6 +9,12 @@ const PoweredByMasjidal = () => {
     });
   };
 
+  const handleWebsiteClick = () => {
+    track('masjidal_website_click', {
+      location: 'footer'
+    });
+  };
+
   return (
     <div className="flex flex-col items-center gap-4 my-8">
     {/* Powered by section */}
@@ -17,6 +23,7 @@ const PoweredByMasjidal = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="flex flex-col items-center hover:opacity-80 transition-opacity"
+      onClick={handleWebsiteClick}
     >
       <span className="text-sm mb-1 text-gray-600">Powered by</span>
       <Image

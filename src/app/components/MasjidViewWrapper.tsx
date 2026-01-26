@@ -11,11 +11,16 @@ interface MasjidViewWrapperProps {
 
 export default function MasjidViewWrapper({ masjids }: MasjidViewWrapperProps) {
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [initialFavorites, setInitialFavorites] = useState<string[]>([]);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);  // ← moved here
 
   useEffect(() => {
     const saved = localStorage.getItem("favoriteMasjids");
-    if (saved) setFavorites(JSON.parse(saved));
+    if (saved) {
+      const parsedFavorites = JSON.parse(saved);
+      setFavorites(parsedFavorites);
+      setInitialFavorites(parsedFavorites); // Store initial state for sorting
+    }
   }, []);
 
   useEffect(() => {
@@ -34,12 +39,25 @@ export default function MasjidViewWrapper({ masjids }: MasjidViewWrapperProps) {
 
   const isFavorite = (masjidId: string) => favorites.includes(masjidId);
 
+  // Sort masjids based on initial favorites (on mount), not current favorites
+  // This prevents jarring reordering when toggling favorites during the session
+  const sortedMasjids = [...masjids].sort((a, b) => {
+    const aIsFavorite = initialFavorites.includes(a.id);
+    const bIsFavorite = initialFavorites.includes(b.id);
+    
+    // If both are favorites or both are not favorites, maintain original order
+    if (aIsFavorite === bIsFavorite) return 0;
+    
+    // If a is favorite and b is not, a comes first (return -1)
+    // If b is favorite and a is not, b comes first (return 1)
+    return aIsFavorite ? -1 : 1;
+  });
+
   return (
     <div>
       <div className="hidden md:block">
         <MasjidCards
-          masjids={masjids}
-          favorites={favorites}
+          masjids={sortedMasjids}
           toggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
           showFavoritesOnly={showFavoritesOnly}           // ← pass down
@@ -49,8 +67,7 @@ export default function MasjidViewWrapper({ masjids }: MasjidViewWrapperProps) {
 
       <div className="md:hidden">
         <MasjidLists
-          masjids={masjids}
-          favorites={favorites}
+          masjids={sortedMasjids}
           toggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
           showFavoritesOnly={showFavoritesOnly}           // ← pass down

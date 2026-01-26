@@ -10,7 +10,6 @@ import IqamahTimes from "./IqamahTimes";
 
 interface MasjidCardsProps {
   masjids: MasjidInformation[];
-  favorites: string[];
   toggleFavorite: (masjidId: string, e: React.MouseEvent) => void;
   isFavorite: (masjidId: string) => boolean;
   showFavoritesOnly: boolean;
@@ -19,7 +18,6 @@ interface MasjidCardsProps {
 
 const MasjidCards = ({
   masjids,
-  favorites,
   toggleFavorite,
   isFavorite,
   showFavoritesOnly,

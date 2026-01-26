@@ -1,18 +1,34 @@
 import Image from "next/image";
-import { track } from "@vercel/analytics";
+
+// Declare gtag function for TypeScript
+declare global {
+  interface Window {
+    gtag?: (
+      command: string,
+      action: string,
+      params: Record<string, string | number>
+    ) => void;
+  }
+}
 
 const PoweredByMasjidal = () => {
   const handleAppStoreClick = (store: 'google-play' | 'apple-app-store') => {
-    track('app_store_click', {
-      store: store,
-      location: 'footer'
-    });
+    // Track with Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'app_store_click', {
+        store: store,
+        location: 'footer'
+      });
+    }
   };
 
   const handleWebsiteClick = () => {
-    track('masjidal_website_click', {
-      location: 'footer'
-    });
+    // Track with Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'masjidal_website_click', {
+        location: 'footer'
+      });
+    }
   };
 
   return (

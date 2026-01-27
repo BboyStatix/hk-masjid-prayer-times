@@ -39,18 +39,18 @@ export default function MasjidViewWrapper({ masjids }: MasjidViewWrapperProps) {
 
   const isFavorite = (masjidId: string) => favorites.includes(masjidId);
 
-  // Sort masjids based on initial favorites (on mount), not current favorites
-  // This prevents jarring reordering when toggling favorites during the session
+  // Sort masjids with favorites first, then by state alphabetically within each group
   const sortedMasjids = [...masjids].sort((a, b) => {
     const aIsFavorite = initialFavorites.includes(a.id);
     const bIsFavorite = initialFavorites.includes(b.id);
     
-    // If both are favorites or both are not favorites, maintain original order
-    if (aIsFavorite === bIsFavorite) return 0;
+    // If one is favorite and the other is not, favorite comes first
+    if (aIsFavorite !== bIsFavorite) {
+      return aIsFavorite ? -1 : 1;
+    }
     
-    // If a is favorite and b is not, a comes first (return -1)
-    // If b is favorite and a is not, b comes first (return 1)
-    return aIsFavorite ? -1 : 1;
+    // If both are favorites or both are not favorites, sort by state
+    return a.state.localeCompare(b.state);
   });
 
   return (

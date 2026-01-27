@@ -103,18 +103,38 @@ const MasjidCards = ({
                     <div className="mb-3">
                       <MasjidLogo name={masjid.name} url={masjid.logo} />
                     </div>
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center line-clamp-2">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-1 text-center line-clamp-2">
                       {masjid.name}
                     </h2>
+                    {masjid.state && (
+                      <div className="mb-3">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
+                          <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                          </svg>
+                          {masjid.state}
+                        </span>
+                      </div>
+                    )}
                     <div className="mt-auto w-full">
                       <IqamahTimes prayerTime={masjid.times[0]} />
                     </div>
                   </>
                 ) : (
                   <div className="flex flex-col items-center justify-center flex-grow pt-10 pb-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center line-clamp-3">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center line-clamp-3">
                       {masjid.name}
                     </h2>
+                    {masjid.state && (
+                      <div className="mb-3">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
+                          <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                          </svg>
+                          {masjid.state}
+                        </span>
+                      </div>
+                    )}
                     <div className="mt-auto w-full">
                       <IqamahTimes prayerTime={masjid.times[0]} />
                     </div>

@@ -19,11 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {process.env.NEXT_PUBLIC_ADSENSE_ID && (
-          <script
+          <Script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
             crossOrigin="anonymous"
-          ></script>
+          />
         )}
       </head>
       <body className={`${inter.className} p-4`}>

@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "./components/GoogleAnalytics";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6772847165361676"
-            crossOrigin="anonymous"
-          ></script>
-        )}
-      </head>
       <body className={`${inter.className} p-4`}>
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics
